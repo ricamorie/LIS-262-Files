@@ -6,3 +6,12 @@ skillset_1.html
 	- Finished
 	- screenshot (skillset_1.jpg)
 folders for skillset_1 up to skillset_5 created
+skillset_2.html
+	- Finished
+	- screenshot (skillset_2.jpg)
+skillset_3.html
+	- Finished
+		-blue.html
+		-orange.html
+		-frameset.html
+	- screenshot (skillset_3.jpg)
