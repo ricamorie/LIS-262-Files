@@ -15,3 +15,7 @@ skillset_3.html
 		-orange.html
 		-frameset.html
 	- screenshot (skillset_3.jpg)
+skillset_4.html
+	- Finished
+	- screenshot (skillset_4.jpg)
+-------------------------------------------------------------------------------------------
