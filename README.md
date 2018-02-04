@@ -20,6 +20,19 @@ skillset_4.html
 	- screenshot (skillset_4.jpg)
 -------------------------------------------------------------------------------------------
 
-<br>
+2/2/2018
+skillse_5.html
+	-Finished
+	-screenshot (skilldet_5.jpg)
 
-LIS-262-Files/skillset_1/skillset_1.html
+--> Revisions for skillset_1 to skillset_4 are done;
+--> for double checking of the screenshots given my Prof. Sonia on the UVLe site.
+
+*Revisions:
+
+skillset_2:
+	- skillset_2.1.jpg
+skillset_3:
+	- skillset_3.2.jpg
+skillset_4:
+	- some codes are needed to be edited for the first cell; there should be no border.
