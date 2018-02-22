@@ -36,3 +36,11 @@ skillset_3:
 	- skillset_3.2.jpg
 skillset_4:
 	- some codes are needed to be edited for the first cell; there should be no border.
+
+-------------------------------------------------------------------------------------------
+CSS Module:
+2/21/2018
+--> created directory for CSS
+
+skillset_1.html with EXTERNAL CSS scripting
+	- done
