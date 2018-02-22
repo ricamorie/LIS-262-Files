@@ -3,29 +3,37 @@
 		<style type="text/css">
 			body {background-color: yellow}
 			h1 {text-decoration: underline line-through; font-style: italic}
-
-			#indent {margin-left: 350px; font-family: "courier new"; font-weight: bold;}
-			#big {text-align: center;}
-			#small {text-align: right;}
+			.indent {margin-left: 250px; font-family: monospace; font-weight: bold}
+				#super {font-style: italic}
+			.bigs {text-align: center}
+					#large {font-size: large}
+				.x-large {font-size: x-large}
+					#nd {font-style: italic}
+				.xx-large {font-size: xx-large}
+					#rd {text-decoration: underline}
+			.smalls {text-align: right}
+				#small {font-size: small}
+				#x-small {font-size: x-small}
+				#xx-small {font-size: xx-small}
 		</style>
 	</head>
 	<body>
-		<h1>Heading 1<sup>superscript</sup></h1>
+		<h1>Heading 1<sup id="head">superscript</sup></h1>
 			<hr>
 		<h4>Heading 4<sub>subscript</sub></h4>
 			<hr>
-				<p id="indent">Bold Text <sup >superscript</sup></p>
+				<p class="indent">Bold Text <sup id="super">superscript</sup></p>
 			<hr>
-		<p id="big">
-			<big>Big text</big><br>
-			<big><big>Big <i>Big</i> text</big></big><br>
-			<big><big><big>Big <u>Big</u> Big text</big></big></big>
+		<p class="bigs">
+			<span id="large">Big text</span><br>
+			<span class="x-large">Big <span id="nd">Big</span> text</span><br>
+			<span class="xx-large">Big <span id="rd">Big</span> Big text</span>
 		</p>
 			<hr>
-		<p id="small">
-			<small>Small text</small><br>
-			<small><small>Small small text</small></small><br>
-			<small><small><small>Small small small text</small></small></small>
+		<p class="smalls">
+			<span id="small">Small text</span><br>
+			<span id="x-small">Small small text</span><br>
+			<span id="xx-small">Small small small text</span>
 		</p>
 			<hr>
 	</body>

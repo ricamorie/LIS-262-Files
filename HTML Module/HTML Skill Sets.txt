@@ -1,0 +1,177 @@
+Skill Set #1:
+<html>
+	<body bgcolor="pink">
+		<h1>This is heading 1</h1>
+			<hr>
+			<p>This is a paragraph</p>
+			<p align="center">This is another paragraph</p>
+				<br>
+				<br>
+				<br>
+				<br>
+			<p align="right">This is another paragraph</p>
+			<p>Headings do not have to be declared in any order, can only be from 1 to 6 and can be repeated</p>
+		<h1>Heading 1</h1>
+		<h6>Heading 6</h6>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h1>Heading 1</h1>
+			<hr>
+	</body>
+</html>
+
+
+
+
+
+Skill Set #2:
+<html>
+	<body bgcolor="yellow">
+		<h1><u><i><s>Heading 1</s></i></u><sup><u><i><s>superscript</s></i></u></sup></h1>
+			<hr>
+		<h4>Heading 4<sub>subscript</sub></h4>
+			<hr>
+		<pre>				<b>Bold Text <sup><i>superscript</i></sup></pre>
+			<hr>
+		<p align="center">
+			<big>Big text</big><br>
+			<big><big>Big <i>Big</i> text</big></big><br>
+			<big><big><big>Big <u>Big</u> Big text</big></big></big>
+		</p>
+			<hr>
+		<p align="right">
+			<small>Small text</small><br>
+			<small><small>Small small text</small></small><br>
+			<small><small><small>Small small small text</small></small></small>
+		</p>
+			<hr>
+	</body>
+</html>
+
+
+
+
+
+Skill Set #3:
+<html>
+	<frameset cols="50%,50%">
+		<frame src="/skillset_3/blue.html"></frame>
+			<frameset rows="50%, 50%">
+				<frame src="/skillset_3/orange.html"></frame>
+				<frame></frame>
+		</frameset>
+</frameset>
+</html>
+
+blue.html
+<html>
+	<body bgcolor="blue">
+	<br>
+		<h1><i>B<sub>L<sub>U<sub>E</sub></sub></sub></i></h1>
+	</body>
+</html>
+
+orange.html
+<html>
+	<body bgcolor="orange">
+	</body>
+</html>
+
+
+
+
+
+Skill Set #4:
+<html>
+	<style>
+		#blank {
+			border: none;
+		}
+	</style>
+
+	<table border="1" cellspacing="5" cellpadding="5">
+		<tr>
+			<th id="blank"></th>
+			<th>Column 1</th>
+			<th>Column 2</th>
+			<th>Column 3</th>
+			<th>Column 4</th>
+			<th>Column 5</th>
+		</tr>
+		<tr>
+			<td>Row 1</td>
+			<td colspan="2" rowspan="2" bgcolor="pink">1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>Row 2</td>
+			<td>5</td>
+			<td rowspan="3" bgcolor="yellow">6</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>Row 3</td>
+			<td>8</td>
+			<td colspan="2" rowspan="2" bgcolor="green">9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>Row 4</td>
+			<td>11</td>
+			<td>12</td>
+		</tr>
+	</table>
+</html>
+
+
+
+
+
+Skill Set #5:
+
+<html>
+	<table>
+		<tr>
+			<th colspan="2" bgcolor="gray">
+				<h1 align="center">Membership Registration</h1>
+			</th>
+		</tr>
+
+		<tr>
+			<td>
+				<form name="input" action="" method="">
+					<fieldset>
+						<legend>Personal Info</legend>
+								First Name: <input type="text" size="20"><br>
+								Last Name: <input type="text" size="20"><br>
+								Address: <br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20">
+										<br><br>
+								Marital Status: <br>
+									<select name="maritalstatus">
+										<option value="maritalstatus1">Single</option>
+									</select>
+									<input type="radio" name="has_a_car">Has a car
+									<input type="radio" name="no_car">No car
+					</fieldset>
+				</form>
+			</td>
+
+			<td>
+				<p><i>Please enter your information on the left <br> and comments below</i></p>
+				<textarea rows="7" cols="35">
+
+comments...
+				</textarea>
+				<br><br>
+				<div align="right">
+					<input type="submit" value="Submit"> <input type="submit" value="Reset">
+				</div>
+			</td>
+		</tr>
+	</table>
+</html>
