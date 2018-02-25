@@ -1,0 +1,87 @@
+Skill Set #1:
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="skillset_1.css">
+	</head>
+	<body>
+		<h1>This is heading 1</h1>
+			<hr>
+			<p>This is a paragraph</p>
+			<p id="center">This is another paragraph</p>
+				<br>
+				<br>
+				<br>
+				<br>
+			<p id="right">This is another paragraph</p>
+			<p>Headings do not have to be declared in any order, can only be from 1 to 6 and can be repeated</p>
+		<h1>Heading 1</h1>
+		<h6>Heading 6</h6>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h1>Heading 1</h1>
+			<hr>
+	</body>
+</html>
+
+CSS File:
+body {background-color: pink}
+#center {text-align: center}
+#right {text-align: right}
+
+
+Skill Set #2:
+<html>
+	<head>
+		<style type="text/css">
+			body {background-color: yellow}
+			h1 {text-decoration: underline line-through; font-style: italic}
+			.indent {margin-left: 250px; font-family: monospace; font-weight: bold}
+				#super {font-style: italic}
+			.bigs {text-align: center}
+					#large {font-size: large}
+				.x-large {font-size: x-large}
+					#nd {font-style: italic}
+				.xx-large {font-size: xx-large}
+					#rd {text-decoration: underline}
+			.smalls {text-align: right}
+				#small {font-size: small}
+				#x-small {font-size: x-small}
+				#xx-small {font-size: xx-small}
+		</style>
+	</head>
+	<body>
+		<h1>Heading 1<sup id="head">superscript</sup></h1>
+			<hr>
+		<h4>Heading 4<sub>subscript</sub></h4>
+			<hr>
+				<p class="indent">Bold Text <sup id="super">superscript</sup></p>
+			<hr>
+		<p class="bigs">
+			<span id="large">Big text</span><br>
+			<span class="x-large">Big <span id="nd">Big</span> text</span><br>
+			<span class="xx-large">Big <span id="rd">Big</span> Big text</span>
+		</p>
+			<hr>
+		<p class="smalls">
+			<span id="small">Small text</span><br>
+			<span id="x-small">Small small text</span><br>
+			<span id="xx-small">Small small small text</span>
+		</p>
+			<hr>
+	</body>
+</html>
+
+
+
+
+
+Skill Set 3:
+<html>
+	<frameset cols="50%,50%">
+		<frame src="blue.png" style="background-color: blue;"></frame>
+			<frameset rows="50%, 50%">
+				<frame src="" style="background-color: orange;"></frame>
+				<frame></frame>
+		</frameset>
+</frameset>
+</html>
