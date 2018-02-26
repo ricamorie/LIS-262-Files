@@ -1,9 +1,36 @@
 <html>
-	<frameset cols="50%,50%">
-		<frame src="blue.png" style="background-color: blue;"></frame>
-			<frameset rows="50%, 50%">
-				<frame src="" style="background-color: orange;"></frame>
-				<frame></frame>
-		</frameset>
-</frameset>
+	<table style="border: 1px solid gray; border-spacing: 5px; padding: 1px; empty-cells: hide;">
+		<tr style="font-weight: bold;">
+			<td></td>
+			<td style="border: 1px solid black; padding: 5px">Column 1</td>
+			<td style="border: 1px solid black; padding: 5px">Column 2</td>
+			<td style="border: 1px solid black; padding: 5px">Column 3</td>
+			<td style="border: 1px solid black; padding: 5px">Column 4</td>
+			<td style="border: 1px solid black; padding: 5px">Column 5</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid black; padding: 5px">Row 1</td>
+			<td colspan="2" rowspan="2" style="background-color: pink; border: 1px solid black; padding: 5px">1</td>
+			<td style="border: 1px solid black; padding: 5px">2</td>
+			<td style="border: 1px solid black; padding: 5px">3</td>
+			<td style="border: 1px solid black; padding: 5px">4</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid black; padding: 5px">Row 2</td>
+			<td style="border: 1px solid black; padding: 5px">5</td>
+			<td rowspan="3" style="background-color: yellow; border: 1px solid black; padding: 5px">6</td>
+			<td style="border: 1px solid black; padding: 5px">7</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid black; padding: 5px">Row 3</td>
+			<td style="border: 1px solid black; padding: 5px">8</td>
+			<td colspan="2" rowspan="2" style="background-color: green; border: 1px solid black; padding: 5px">9</td>
+			<td style="border: 1px solid black; padding: 5px">10</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid black; padding: 5px">Row 4</td>
+			<td style="border: 1px solid black; padding: 5px">11</td>
+			<td style="border: 1px solid black; padding: 5px">12</td>
+		</tr>
+	</table>
 </html>

@@ -1,54 +1,53 @@
 <html>
-	<style>
-		#blank {
-			border: none;
+	<style type="text/css">
+		#heading {
+			background-color: gray;
+			font-weight: bold;
+			
 		}
-
-		#pink {
-			background-color: pink;
-		}
-
-		#yellow {
-			background-color: yellow;
-		}
-
-		#green {
-			background-color: green;
-		}
+		
 	</style>
+	<table>
+		<tr>
+			<th id="heading" colspan="2">
+				<p align="center">Membership Registration</p>
+			</td>
+		</tr>
 
-	<table border="1" cellspacing="5" cellpadding="5">
 		<tr>
-			<th id="blank"></th>
-			<th>Column 1</th>
-			<th>Column 2</th>
-			<th>Column 3</th>
-			<th>Column 4</th>
-			<th>Column 5</th>
-		</tr>
-		<tr>
-			<td>Row 1</td>
-			<td id="pink" colspan="2" rowspan="2">1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-		</tr>
-		<tr>
-			<td>Row 2</td>
-			<td>5</td>
-			<td id="yellow" rowspan="3">6</td>
-			<td>7</td>
-		</tr>
-		<tr>
-			<td>Row 3</td>
-			<td>8</td>
-			<td id="green" colspan="2" rowspan="2">9</td>
-			<td>10</td>
-		</tr>
-		<tr>
-			<td>Row 4</td>
-			<td>11</td>
-			<td>12</td>
+			<td>
+				<form name="input" action="" method="">
+					<fieldset>
+						<legend>Personal Info</legend>
+								First Name: <input type="text" size="20"><br>
+								Last Name: <input type="text" size="20"><br>
+								Address: <br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20">
+										<br><br>
+								Marital Status: <br>
+									<select name="maritalstatus">
+										<option value="maritalstatus1">Single</option>
+									</select>
+									<input type="radio" name="has_a_car">Has a car
+									<input type="radio" name="no_car">No car
+					</fieldset>
+				</form>
+			</td>
+
+			<td>
+				<p><i>Please enter your information on the left <br> and comments below</i></p>
+				<textarea rows="7" cols="35">
+
+comments...
+				</textarea>
+				<br><br>
+				<div align="right">
+					<input type="submit" value="Submit"> <input type="submit" value="Reset">
+				</div>
+			</td>
 		</tr>
 	</table>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>
