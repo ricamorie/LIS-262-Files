@@ -1,0 +1,100 @@
+Skill Set #4:
+<html>
+	<style type="text/css">
+		#head {margin-bottom: 0; width: 41%; padding-bottom: 20px; background-color: gray; text-align: center;	font-weight: bold; font-size: 30px}
+		.left {display: inline-block; width: 278px;}
+		.right {display: inline-block; word-wrap: break-word; width: 20%;}
+		#fieldtext {font-style: italic;}
+		.button {text-align: right}
+	</style>
+	
+	<body>
+		<p id="head">Membership Registration</p>
+			<div class="left">
+				<form name="input" action="" method="">
+					<fieldset>
+						<legend>Personal Info</legend>
+								First Name: <input type="text" size="19"><br>
+								Last Name: <input type="text" size="19"><br>
+								Address: <br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20">
+										<br><br>
+								Marital Status: <br>
+									<select name="maritalstatus">
+										<option value="maritalstatus1">Single</option>
+									</select>
+									<input type="radio" name="has_a_car">Has a car
+									<input type="radio" name="no_car">No car
+									<br><br>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="right">
+				<p id="fieldtext">Please enter your information on the left and comments below</p>
+				<textarea rows="8" cols="35">
+
+comments...
+				</textarea>
+				<br><br>
+				<div class="button">
+					<input type="submit" value="Submit"> <input type="submit" value="Reset">
+				</div>
+			</div>
+	</body>
+</html>
+
+
+
+
+Skill Set #5:
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="skillset_5.css">
+	</head>
+	<body>
+		<p id="head">Membership Registration</p>
+			<div class="left">
+				<form name="input" action="" method="">
+					<fieldset>
+						<legend>Personal Info</legend>
+								First Name: <input type="text" size="19"><br>
+								Last Name: <input type="text" size="19"><br>
+								Address: <br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20"><br>
+										<input type="text" size="20">
+										<br><br>
+								Marital Status: <br>
+									<select name="maritalstatus">
+										<option value="maritalstatus1">Single</option>
+									</select>
+									<input type="radio" name="has_a_car">Has a car
+									<input type="radio" name="no_car">No car
+									<br> <br>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="right">
+				<p id="fieldtext">Please enter your information on the left <br> and comments below</i></p>
+				<textarea rows="8" cols="35">
+
+comments...
+				</textarea>
+				<br><br>
+				<div class="button">
+					<input type="submit" value="Submit"> <input type="submit" value="Reset">
+				</div>
+			</div>
+	</body>
+</html>
+
+CSS Code:
+#head {margin-bottom: 0; width: 41%; padding-bottom: 20px; background-color: gray; text-align: center;	font-weight: bold; font-size: 30px}
+.left {display: inline-block; width: 278px;}
+.right {display: inline-block; word-wrap: break-word; width: 20%;}
+#fieldtext {font-style: italic;}
+.button {text-align: right}

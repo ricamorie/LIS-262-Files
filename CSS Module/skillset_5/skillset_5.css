@@ -1,0 +1,5 @@
+#head {margin-bottom: 0; width: 41%; padding-bottom: 20px; background-color: gray; text-align: center;	font-weight: bold; font-size: 30px}
+.left {display: inline-block; width: 278px;}
+.right {display: inline-block; word-wrap: break-word; width: 20%;}
+#fieldtext {font-style: italic;}
+.button {text-align: right}
