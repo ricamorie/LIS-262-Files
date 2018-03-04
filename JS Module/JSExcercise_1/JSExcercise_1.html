@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function total(a,b) {
+				result = a+b;
+				return result;
+			}
+			function difference(a,b) {
+				result = a-b;
+				return result;
+			}
+			function product(a,b) {
+				result = a*b;
+				return result;
+			}
+			function quotient(a,b) {
+				result = a/b;
+				return result;
+			}
+		</script>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			first = parseInt(prompt("Enter first number:"));
+			second = parseInt(prompt("Enter second number:"));
+			sum = total(first,second);
+			diff = difference(first,second);
+			prod = product(first,second);
+			quo = quotient(first,second);
+			document.write("<p><big>The SUM of the numbers: <b>"+sum+"</b></big></p>");
+			document.write("<p><big>The DIFFERENCE of the numbers: <b>"+diff+"</b></big></p>");
+			document.write("<p><big>The PRODUCT of the numbers: <b>"+prod+"</b></big></p>");
+			document.write("<p><big>The QUOTIENT of the numbers: <b>"+quo+"</b></big></p>");
+		</script>
+	</body>
+</html>	
