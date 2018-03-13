@@ -12,6 +12,7 @@
 #bodybg {
 	background-blend-mode: blur(25px);
 	margin-top: 50px;
+	background-color: #C3F7A0;
 }
 
 .nav-page ul {
@@ -26,7 +27,7 @@
 	float: left;
 }
 
-.nav-page li a, .dropbtn {
+.nav-page li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -34,20 +35,93 @@
 	text-decoration: none;
 }
 
-.nav-page li a:hover:not(#active) {
+.nav-page li:hover:not(#active) {
 	background-color: turquoise;
 }
 
+#active {
+	background-color: #18679F;
+}
+
+#active1 {
+	background-color: turquoise;
+	border-radius: 15px 15px 15px 15px;
+}
+
+#resbtn {
+	position: absolute;
+	right: 5;
+	background-color: red;
+	border-radius: 25px 25px 25px 25px;
+	border: none;
+	padding: 4px 24px;
+	font-weight: bold;
+	color: white;
+	font-family: tahoma;
+	font-size: 20px;
+	top: 1;
+}
+
+/*Schedule Table Style*/
+.sched {
+	background-color: white;
+	margin: 15px;
+}
+
+.sched th {
+	background-color: #AAA9A9;
+	width: 10%;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.sched tr {
+	line-height: 30px;
+}
+
+td {
+	font-weight: bold;
+	text-align: center;
+
+}
+
+td:hover:not(.time) {
+	background-color: #71D4F0;
+}
+
+.time {
+	width: 5%;
+	background-color: #AAA9A9;
+}
+
+footer {
+	align-content: center;
+	font-weight: bold;
+	margin-top: 10px;
+	background-color: gray;
+	text-align: center;
+	border-radius: 25px 25px 25px 25px;
+	padding-bottom: 4px;
+}
+
+
 /*Dropdown Menu*/
+.dropbtn {
+	cursor: context-menu;
+}
+
 .dropdown-content {
-	display: block;
+	display: none;
 	position: absolute;
 	background-color: #6E6666;
 	box-shadow: 0px 8px 16px 0px;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 1px;
 }
 
 .dropdown-content p {
 	background-color: white;
+	border-radius: 15px 15px 15px 15px;
 	color: black;
 	margin: 0;
 	text-align: center;
@@ -66,46 +140,11 @@
 	text-align: left;
 }
 
-#active {
-	background-color: #18679F;
+.dropdown-content a:hover {
+	background-color: red;
+	border-radius: 15px 15px 15px 15px;
 }
 
-.sched {
-	background-color: white;
-	margin: 15px;
-}
-
-.sched th {
-	background-color: gray;
-	width: 10%;
-	font-weight: bold;
-	font-size: 24px;
-}
-
-.sched tr {
-	line-height: 30px;
-}
-
-td {
-	font-weight: bold;
-	text-align: center;
-
-}
-
-td:hover {
-	background-color: turquoise;
-}
-
-.time {
-	width: 5%;
-}
-
-footer {
-	align-content: center;
-	font-weight: bold;
-	margin-top: 10px;
-	background-color: gray;
-	text-align: center;
-	border-radius: 25px 25px 25px 25px;
-	padding-bottom: 4px;
+.dropdown:hover .dropdown-content {
+	display: block;
 }
