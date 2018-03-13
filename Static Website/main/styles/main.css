@@ -11,7 +11,7 @@
 
 #bodybg {
 	background-blend-mode: blur(25px);
-	margin-top: 50px;
+	margin-top: 35px;
 	background-color: #C3F7A0;
 }
 
@@ -50,16 +50,21 @@
 
 #resbtn {
 	position: absolute;
-	right: 5;
+	top: 2;
+	right: 8;
 	background-color: red;
 	border-radius: 25px 25px 25px 25px;
 	border: none;
-	padding: 4px 24px;
+	padding: 2px 24px 4px 24px;
 	font-weight: bold;
 	color: white;
 	font-family: tahoma;
 	font-size: 20px;
-	top: 1;
+}
+
+#resbtn:hover {
+	transition: transform .3s;
+	transform: scale(1.2);
 }
 
 /*Schedule Table Style*/
@@ -73,10 +78,12 @@
 	width: 10%;
 	font-weight: bold;
 	font-size: 24px;
+	line-height: 28px;
 }
 
 .sched tr {
-	line-height: 30px;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 td {
@@ -86,24 +93,28 @@ td {
 }
 
 td:hover:not(.time) {
-	background-color: #71D4F0;
+	background-color: red;
+	transition: transform .4s;
+	transform: scale(1.2);
+	color: white;
+	border: 1px solid gray;
 }
 
 .time {
-	width: 5%;
+	width: 7%;
+	font-family: monospace;
 	background-color: #AAA9A9;
 }
 
 footer {
-	align-content: center;
 	font-weight: bold;
 	margin-top: 10px;
-	background-color: gray;
+	background-color: #69B5EA;
 	text-align: center;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 15px 15px 15px 15px;
 	padding-bottom: 4px;
+	bottom: 0;
 }
-
 
 /*Dropdown Menu*/
 .dropbtn {
@@ -121,7 +132,7 @@ footer {
 
 .dropdown-content p {
 	background-color: white;
-	border-radius: 15px 15px 15px 15px;
+	
 	color: black;
 	margin: 0;
 	text-align: center;

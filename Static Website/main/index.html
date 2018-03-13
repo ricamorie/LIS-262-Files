@@ -11,9 +11,17 @@
 		<!-- CSS code here -->
 		<link rel="stylesheet" href="styles/main.css">
 		<!-- JavaScript code here -->
+		<script>
+			var d = new Date();
+			document.getElementById("demo").innerHTML = d.getTime();
+		</script>
 	</head>
 		<!-- Body Section Starts Here -->
 	<body background="images/bgimage_1.png" id="bodybg">
+		<div class="modal">
+			
+		</div>
+
 		<nav class="nav-list">
 			<div class="nav-page">
 				<ul>
@@ -54,9 +62,8 @@
 <hr width="95%" style="height: 4px; background-color: red; border-radius: 25px;">-->
 
 		<h1><b><u>Viewing Room Schedules:</u></b></h1>
-
 		<div class="sched">
-			<table width="100%" border="1" cellspacing="0">
+			<table border="1" cellspacing="0">
 				<tr>
 					<td class="time"></td>
 					<th id="mon">Monday</th>
@@ -67,7 +74,7 @@
 					<th id="sat">Saturday</th>
 				</tr>
 				<tr>
-					<td class="time">7:00 - 8:00</td>
+					<td class="time">7:00 - 7:15</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -76,7 +83,52 @@
 					<td></td>					
 				</tr>
 				<tr>
-					<td class="time">8:00 - 9:00</td>
+					<td class="time">7:15 - 7:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">7:30 - 7:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">7:45 - 8:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">8:00 - 8:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">8:15 - 8:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">8:30 - 8:45</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -85,7 +137,34 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">9:00 - 10:00</td>
+					<td class="time">8:45 - 9:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">9:00 - 9:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">9:15 - 9:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>					
+				</tr>
+				<tr>
+					<td class="time">9:30 - 9:45</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -94,7 +173,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">10:00 - 11:00</td>
+					<td class="time">9:45 - 10:00</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -103,7 +182,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">11:00 - 12:00</td>
+					<td class="time">10:00 - 10:15</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -112,7 +191,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">12:00 - 1:00</td>
+					<td class="time">10:15 - 10:30</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -121,7 +200,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">1:00 = 2:00</td>
+					<td class="time">10:30 - 10:45</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -130,7 +209,16 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">2:00 - 3:00</td>
+					<td class="time">10:45 = 11:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">11:00 - 11:15</td>
 					<td ></td>
 					<td></td>
 					<td id="res" rowspan="3" bgcolor="yellow">Ms. Sarah Francisco <br> PowerPoint Presentation <br> 2:00pm - 5:00pm</td>
@@ -139,7 +227,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">3:00 - 4:00</td>
+					<td class="time">11:15 - 11:30</td>
 					<td></td>
 					<td></td>
 					
@@ -148,7 +236,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">4:00 - 5:00</td>
+					<td class="time">11:30 - 11:45</td>
 					<td></td>
 					<td></td>
 					
@@ -157,7 +245,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">5:00 - 6:00</td>
+					<td class="time">11:45 - 12:00</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -166,7 +254,7 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">6:00 - 7:00</td>
+					<td class="time">12:00 - 12:15</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -175,7 +263,277 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td class="time">7:00 - 8:00</td>
+					<td class="time">12:15 - 12:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">12:30 - 12:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">12:45 - 1:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">1:00 - 1:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">1:15 - 1:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">1:30 - 1:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">1:45 - 2:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">2:00 - 2:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">2:15 - 2:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">2:30 - 2:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">2:45 - 3:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">3:00 - 3:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">3:15 - 3:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">3:30 - 3:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">3:45 - 4:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">4:00 - 4:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">4:15 - 4:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">4:30 - 4:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">4:45 - 5:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">5:00 - 5:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">5:15 - 5:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">5:30 - 5:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">5:45 - 6:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">6:00 - 6:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">6:15 - 6:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">6:30 - 6:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">6:45 - 7:00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">7:00 - 7:15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">7:15 - 7:30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">7:30 - 7:45</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="time">7:45 - 8:00</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -186,10 +544,9 @@
 			</table>
 		</div>
 
-		<footer align="center">
-			<i>Copyright:</i> <br>
-			<big><big>Richard Alphege A. Ravalo, RL</big></big> <br>
-				IBED - Junior Librarian <br>
+		<footer>
+			<i>Copyright:</i> &nbsp; <big>Richard Alphege A. Ravalo, RL</big> | IBED - Junior Librarian | Sacred Heart College of Lucena, Inc. |
+			(042) 710 3888 | (+63) 943 282 0995 | raravalo@up.edu.ph
 		</footer>
 		<!-- Live Reload Script -->
 		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
