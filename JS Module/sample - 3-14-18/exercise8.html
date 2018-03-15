@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<script type="text/javascript">
+			var str="W3Schools is great!"
+			document.write("<p>" + str + "</p>");
+			document.write(str.length)
+
+			var pos=str.indexOf("School")
+			if (pos>=0)
+			{
+				document.write("School found at position: ")
+				document.write(pos + "<br>")
+			}
+				else {
+						document.write("School not found")
+					}
+
+			document.write(str.match("great"))
+		</script>
+	</body>
+</html>
