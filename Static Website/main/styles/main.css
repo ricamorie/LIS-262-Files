@@ -50,7 +50,7 @@
 
 #resbtn {
 	position: absolute;
-	top: 2;
+	top: 1;
 	right: 8;
 	background-color: red;
 	border-radius: 25px 25px 25px 25px;
@@ -98,6 +98,7 @@ td:hover:not(.time) {
 	transform: scale(1.2);
 	color: white;
 	border: 1px solid gray;
+	box-shadow: 0px 8px 16px 0px;
 }
 
 .time {

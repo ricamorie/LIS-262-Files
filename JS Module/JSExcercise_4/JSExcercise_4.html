@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<script type="text/javascript">
+			var first = parseInt(prompt("Enter table height:"))
+			var second = parseInt(prompt("Enter table length:"))
+				document.write("<table border='1px' style='text-align:center'>"); 
+				for(var i = 1; i <= first; i++) {
+					document.write("<tr style='height:25px; color:black; font-weight:bold;'>");
+					for(var j = 1; j <= second; j++) {
+						document.write("<td style='width:40px'>" + i*j + "</td>");
+					} document.write("</tr>");
+				} document.write("</table>");
+		</script>
+	</body>
+</html>	

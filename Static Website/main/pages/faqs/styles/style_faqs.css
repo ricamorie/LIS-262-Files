@@ -1,23 +1,29 @@
-button.accordion {
-	background-color: #eee;
-	color: #444;
+/*Text Style*/
+h1 {
+	text-align: center;
+}
+
+/*Accordion Style*/
+.accordion {
+	background-color: #857F7F;
+	color: white;
 	cursor: pointer;
-	padding: 18px;
+	padding: 10px;
 	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: 15px;
+	font-size: 20px;
+	font-weight: bold;
 	transition: 0.4s;
+	border-radius: 5px 5px 5px 5px;
 }
 
-button.accordion.active, button.accordion:hover {
-	background-color: #ddd;
+.accordion.active, .accordion:hover {
+	background-color: #27CABA;
 }
 
-button.accordion:after {
-	/*Unicode character for "plus" sign is  '\02795'*/
-
+.accordion:after {
 	content: '\02795';
 	font-size: 13px;
 	color: #777;
@@ -25,13 +31,13 @@ button.accordion:after {
 	margin-left: 5px;
 }
 
-button.accordion.active:hover {
-	/*Unicode character for "minus" sign is '\2796'*/
-	content: '\2796';
+.accordion.active:after {
+	content: "\2796";
 }
 
-div.panel {
+.panel {
 	padding: 0 18px;
+	font-size: 20px;
 	background-color: white;
 	max-height: 0;
 	overflow: hidden;
@@ -39,7 +45,11 @@ div.panel {
 	opacity: 0;
 }
 
-div.panel.show {
+.panel.show {
 	opacity: 1;
 	max-height: 500px;
+}
+
+footer {
+	display: none;
 }
