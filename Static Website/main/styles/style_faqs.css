@@ -1,6 +1,7 @@
 /*Text Style*/
 h1 {
 	text-align: center;
+
 }
 
 /*Accordion Style*/
@@ -38,7 +39,7 @@ h1 {
 .panel {
 	padding: 0 18px;
 	font-size: 20px;
-	background-color: white;
+	background-color: #E8E3E3;
 	max-height: 0;
 	overflow: hidden;
 	transition: 0.6s ease-in-out;
