@@ -1,0 +1,190 @@
+SKILLSET 1:
+<?
+print "<html>
+	<head>
+		<title>Structure and Errors sample page - FIX ME!!!</title>
+	</head>
+	<body>
+		<table border=0>
+			<tr>
+				<td><b>This should be formatted nicely to be easy to read in this document.
+
+				If you can not quickly and easily find out what the errors <br>on this page are, then perhaps you should go back and re-examine the fifth movie in this chapter...</b></td>
+			</tr>
+		</table>
+
+		<p>And by the way, you if you can figure out all the errors on this page, then you are well on your way to becoming a good PHP programmer. Congratulations!</p>
+	</body>
+</html>"
+?>
+
+
+SKILLSET 2:
+<?
+define("FIRST_NAME","Richard Alphege");
+define("LAST_NAME","Ravalo");
+	$university="Sacred Heart College of Lucena, Inc.";
+	$college="Integrated Basic Education";
+	$department="Learning Resource Center";
+	$affiliation=$department.", ".$college.", ".$university;
+		print "Good morning. I am <b>".FIRST_NAME." ".LAST_NAME."</b> of the $affiliation<br><br>";
+		print "You may call me ".FIRST_NAME." of the " .$department. ". See you!<BR><BR>"
+?>
+
+
+SKILLSET 3:
+<html>
+	<head>
+		<style>
+			p {font-size: 40px;}
+		</style>
+	</head>
+
+	<body>
+		<form method="post" style="font-size: 30px;">
+			<fieldset style="width: 50%;">
+				<legend>All-in-One Calculator</legend>
+				Enter 1st Number : <input type="number" name="n1" style="font-size: 30px" required> <br>
+				Enter 2nd Number: <input type="number" name="n2" style="font-size: 30px" required> <br>
+				<input type="submit" value="Calculate!">
+			</fieldset>
+		</form>
+
+		<?php
+			$first = $_POST["n1"];
+			$second = $_POST["n2"];
+			$sum=$first+$second;
+			$diff=$first-$second;
+			$prod=$first*$second;
+			$quo=$first/$second;
+			$result= 	"<p><big>The SUM of the numbers: <b> $sum </b></big></p>
+						<p><big>The DIFFERENCE of the numbers: <b> $diff </b></big></p>
+						<p><big>The PRODUCT of the numbers: <b> $prod </b></big></p>
+						<p><big>The QUOTIENT of the numbers: <b> $quo </b></big></p>";
+			echo $result;
+		?>
+	</body>
+</html>
+
+
+SKILLSET 4:
+<html>
+	<body>
+		<form method="post">
+			<fieldset>
+				<legend>Grade-Rating Conversion</legend>
+				Enter your grade here: <input type="number" name="grade" required> <br>
+				<i>Enter a grade between 50 & 100.</i> <br>
+				<input type="submit" value="Convert!">
+			</fieldset>
+		</form>
+		
+		<?php
+		$grade = $_POST["grade"];
+
+		if ($grade >= 98 && $grade <= 100) {
+			$rate = "Your grade equivalent is: <b>1.00</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 95 && $grade <= 97) {
+			$rate = "Your grade equivalent is: <b>1.25</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 92 && $grade <= 94) {
+			$rate = "Your grade equivalent is: <b>1.50</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 89 && $grade <= 91) {
+			$rate = "Your grade equivalent is: <b>1.75</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 86 && $grade <= 88) {
+			$rate = "Your grade equivalent is: <b>2.00</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 83 && $grade <= 85) {
+			$rate = "Your grade equivalent is: <b>2.25</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 80 && $grade <= 82) {
+			$rate = "Your grade equivalent is: <b>2.50</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 77 && $grade <= 79) {
+			$rate = "Your grade equivalent is: <b>2.75</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 75 && $grade <= 76) {
+			$rate = "Your grade equivalent is: <b>3.00</b><br><br>You have <b>PASSED</b> the subject.";
+		} elseif ($grade >= 50 && $grade <= 74) {
+			$rate = "Your grade equivalent is: <b>5.00</b><br><br>Sorry, you have <b>FAILED</b> the subject.";
+		} else {
+			$rate = "<b>Please input a valid grade.</b>";
+		} echo $rate;
+		?>
+	</body>
+</html>
+
+
+SKILLSET 5:
+<html>
+	<body style="font-size: 50px">
+		<form method="post" style="font-size: 30px; width: 50%">
+			<fieldset>
+				<legend>Menu Selector</legend>
+				Enter a day: <input type="text" name="weekd" required=""> <br>
+				<i>Enter any day of the week.</i> <br>
+				<input type="submit" value="Surprise Me!">
+			</fieldset>
+		</form>
+	
+		<?php 
+		$Day = $_POST["weekd"];
+
+		switch ($Day) {
+			case "monday":
+				echo "Karate Chop <i>for Mondays</i><br><br> Common term: <b>Chop Suey</b> <i>(You'll die to taste this. :D)</i>";
+			break;
+
+			case "tuesday":
+				echo "Bloody Mary <i>for Tuesdays</i><br><br> Common term: <b>Dinuguang baboy</b> (<i>yes, Mary is a pig</i>)";
+			break;
+
+			case "wednesday":
+				echo "Mollusks in Palm Milk <i>for Wednesday</i><br><br> Common term: <b>Ginataang Suso</b> <i>(Served with a toothpick, for the mollusks not for your teeth:D)</i>";
+			break;
+
+			case "thursday":
+				echo "Leftovers <i>for Thursdays</i><br><br> <b>Disclaimer:</b> The only day in the week wherein we don't sell fresh food. :D";
+			break;
+
+			case "friday":
+				echo "Stir-fried <i>convolvulus</i> seasoned with tamari <i>for Fridays</i><br><br> Common term: <b>Adobong <i>Kangkong</i></b> <i>(For all the haters that think this is classy.)</i>";
+			break;
+
+			case "saturday":
+				echo "Stakie wakey <i>for Saturday</i><br><br> Common term: <b>Beef Chop</b> <i>(It's like pork chop but with beef)";
+			break;
+
+			case "sunday":
+				echo "nothing<br><br> <i>(It's our day off)</i>";
+			break;
+
+			default:
+				echo "Enter a valid day! *facepalm";
+			}
+		?>
+	</body>
+</html>
+
+
+SKILLSET 6:
+<html>
+	<body>
+		<form method="post" style="width: 60%">
+			<fieldset>
+				<legend>Multiplication Table</legend>
+				Enter table height: <input type="number" name="height" required> &nbsp;&nbsp;
+				Enter table length: <input type="number" name="length" required> &nbsp;&nbsp;	
+				<input type="submit" value="Generate table">
+			</fieldset>
+		</form>
+	<?php 
+	$first = $_POST["height"];
+	$second = $_POST["length"];
+
+		echo "<table border='1px' style='text-align:center'>";
+		for($x = 1; $x <= $first; $x++) {
+			echo "<tr style='height:25px; color:black; font-weight:bold;'>";
+			for($y = 1; $y <= $second; $y++) {
+				$product = $x*$y;
+				echo "<td style='width:40px'> $product </td>";
+			} echo "</tr>";
+		} echo "</table>";
+	?>
+	</body>
+</html>
